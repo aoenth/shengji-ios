@@ -13,6 +13,9 @@
 		0A1B7E6424D7825200CCB283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B7E6224D7825200CCB283 /* LaunchScreen.storyboard */; };
 		0A1B7E6924D782E000CCB283 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7878E024D6863000CA8CFE /* NetworkService.swift */; };
 		0A1B7E6C24D782FD00CCB283 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 0A1B7E6B24D782FD00CCB283 /* Starscream */; };
+		0A1F577724E0B1FF00BA0CE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F577624E0B1FF00BA0CE7 /* LoginViewController.swift */; };
+		0A1F577924E0BD0D00BA0CE7 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F577824E0BD0D00BA0CE7 /* BorderedButton.swift */; };
+		0A1F577B24E0BDFB00BA0CE7 /* BorderedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F577A24E0BDFB00BA0CE7 /* BorderedTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		0A1B7E6024D7825200CCB283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A1B7E6324D7825200CCB283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A1B7E6524D7825200CCB283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A1F577624E0B1FF00BA0CE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0A1F577824E0BD0D00BA0CE7 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		0A1F577A24E0BDFB00BA0CE7 /* BorderedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedTextField.swift; sourceTree = "<group>"; };
 		0A7878E024D6863000CA8CFE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = "../../shengji-ios/NetworkService.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,6 +49,9 @@
 				0A4DDC9524D8B39000948D52 /* Supporting Files */,
 				0A4DDC9724D8B3AD00948D52 /* Networking */,
 				0A4DDC9624D8B39E00948D52 /* App Images */,
+				0A1F577624E0B1FF00BA0CE7 /* LoginViewController.swift */,
+				0A1F577A24E0BDFB00BA0CE7 /* BorderedTextField.swift */,
+				0A1F577824E0BD0D00BA0CE7 /* BorderedButton.swift */,
 			);
 			path = Shengji;
 			sourceTree = "<group>";
@@ -173,6 +182,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1F577924E0BD0D00BA0CE7 /* BorderedButton.swift in Sources */,
+				0A1F577724E0B1FF00BA0CE7 /* LoginViewController.swift in Sources */,
+				0A1F577B24E0BDFB00BA0CE7 /* BorderedTextField.swift in Sources */,
 				0A1B7E5824D7825100CCB283 /* AppDelegate.swift in Sources */,
 				0A1B7E6924D782E000CCB283 /* NetworkService.swift in Sources */,
 				0A1B7E5A24D7825100CCB283 /* SceneDelegate.swift in Sources */,
@@ -199,8 +211,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3WM87N8XYQ;
-				INFOPLIST_FILE = Shengji/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				INFOPLIST_FILE = "$(SRCROOT)/Shengji/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -218,8 +230,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3WM87N8XYQ;
-				INFOPLIST_FILE = Shengji/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				INFOPLIST_FILE = "$(SRCROOT)/Shengji/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
