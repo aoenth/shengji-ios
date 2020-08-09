@@ -7,86 +7,118 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A7878DF24D6846400CA8CFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7878DE24D6846400CA8CFE /* ViewController.swift */; };
-		0A7878E124D6863000CA8CFE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7878E024D6863000CA8CFE /* NetworkService.swift */; };
-		0A8673F124D698980022F6A1 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 0A8673F024D698980022F6A1 /* Starscream */; };
-		0ABE1E6B24D683B70050E722 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABE1E6A24D683B70050E722 /* AppDelegate.swift */; };
-		0ABE1E7124D683B80050E722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE1E7024D683B80050E722 /* Assets.xcassets */; };
-		0ABE1E7724D683B80050E722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE1E7524D683B80050E722 /* LaunchScreen.storyboard */; };
+		0A1B7E5824D7825100CCB283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B7E5724D7825100CCB283 /* AppDelegate.swift */; };
+		0A1B7E5A24D7825100CCB283 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B7E5924D7825100CCB283 /* SceneDelegate.swift */; };
+		0A1B7E6124D7825200CCB283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B7E6024D7825200CCB283 /* Assets.xcassets */; };
+		0A1B7E6424D7825200CCB283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B7E6224D7825200CCB283 /* LaunchScreen.storyboard */; };
+		0A1B7E6924D782E000CCB283 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7878E024D6863000CA8CFE /* NetworkService.swift */; };
+		0A1B7E6C24D782FD00CCB283 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 0A1B7E6B24D782FD00CCB283 /* Starscream */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A7878DE24D6846400CA8CFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0A7878E024D6863000CA8CFE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		0ABE1E6724D683B70050E722 /* shenji-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shenji-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ABE1E6A24D683B70050E722 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0ABE1E7024D683B80050E722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0ABE1E7624D683B80050E722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0ABE1E7824D683B80050E722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A1B7E5524D7825100CCB283 /* Shengji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shengji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A1B7E5724D7825100CCB283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A1B7E5924D7825100CCB283 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0A1B7E6024D7825200CCB283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A1B7E6324D7825200CCB283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A1B7E6524D7825200CCB283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A7878E024D6863000CA8CFE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = "../../shengji-ios/NetworkService.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0ABE1E6424D683B70050E722 /* Frameworks */ = {
+		0A1B7E5224D7825100CCB283 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A8673F124D698980022F6A1 /* Starscream in Frameworks */,
+				0A1B7E6C24D782FD00CCB283 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1B7E5624D7825100CCB283 /* Shengji */ = {
+			isa = PBXGroup;
+			children = (
+				0A4DDC9524D8B39000948D52 /* Supporting Files */,
+				0A4DDC9724D8B3AD00948D52 /* Networking */,
+				0A4DDC9624D8B39E00948D52 /* App Images */,
+			);
+			path = Shengji;
+			sourceTree = "<group>";
+		};
+		0A1B7E6A24D782FD00CCB283 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A4DDC9524D8B39000948D52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A1B7E5724D7825100CCB283 /* AppDelegate.swift */,
+				0A1B7E5924D7825100CCB283 /* SceneDelegate.swift */,
+				0A1B7E6524D7825200CCB283 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A4DDC9624D8B39E00948D52 /* App Images */ = {
+			isa = PBXGroup;
+			children = (
+				0A1B7E6024D7825200CCB283 /* Assets.xcassets */,
+				0A1B7E6224D7825200CCB283 /* LaunchScreen.storyboard */,
+			);
+			path = "App Images";
+			sourceTree = "<group>";
+		};
+		0A4DDC9724D8B3AD00948D52 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0A7878E024D6863000CA8CFE /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		0ABE1E5E24D683B70050E722 = {
 			isa = PBXGroup;
 			children = (
-				0ABE1E6924D683B70050E722 /* shenji-ios */,
+				0A1B7E5624D7825100CCB283 /* Shengji */,
 				0ABE1E6824D683B70050E722 /* Products */,
+				0A1B7E6A24D782FD00CCB283 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		0ABE1E6824D683B70050E722 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0ABE1E6724D683B70050E722 /* shenji-ios.app */,
+				0A1B7E5524D7825100CCB283 /* Shengji.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		0ABE1E6924D683B70050E722 /* shenji-ios */ = {
-			isa = PBXGroup;
-			children = (
-				0ABE1E6A24D683B70050E722 /* AppDelegate.swift */,
-				0A7878DE24D6846400CA8CFE /* ViewController.swift */,
-				0ABE1E7024D683B80050E722 /* Assets.xcassets */,
-				0ABE1E7524D683B80050E722 /* LaunchScreen.storyboard */,
-				0ABE1E7824D683B80050E722 /* Info.plist */,
-				0A7878E024D6863000CA8CFE /* NetworkService.swift */,
-			);
-			path = "shenji-ios";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0ABE1E6624D683B70050E722 /* shenji-ios */ = {
+		0A1B7E5424D7825100CCB283 /* Shengji */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0ABE1E7B24D683B80050E722 /* Build configuration list for PBXNativeTarget "shenji-ios" */;
+			buildConfigurationList = 0A1B7E6624D7825200CCB283 /* Build configuration list for PBXNativeTarget "Shengji" */;
 			buildPhases = (
-				0ABE1E6324D683B70050E722 /* Sources */,
-				0ABE1E6424D683B70050E722 /* Frameworks */,
-				0ABE1E6524D683B70050E722 /* Resources */,
+				0A1B7E5124D7825100CCB283 /* Sources */,
+				0A1B7E5224D7825100CCB283 /* Frameworks */,
+				0A1B7E5324D7825100CCB283 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "shenji-ios";
+			name = Shengji;
 			packageProductDependencies = (
-				0A8673F024D698980022F6A1 /* Starscream */,
+				0A1B7E6B24D782FD00CCB283 /* Starscream */,
 			);
-			productName = "shenji-ios";
-			productReference = 0ABE1E6724D683B70050E722 /* shenji-ios.app */;
+			productName = Shengji;
+			productReference = 0A1B7E5524D7825100CCB283 /* Shengji.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,15 +127,15 @@
 		0ABE1E5F24D683B70050E722 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					0ABE1E6624D683B70050E722 = {
-						CreatedOnToolsVersion = 12.0;
+					0A1B7E5424D7825100CCB283 = {
+						CreatedOnToolsVersion = 11.6;
 					};
 				};
 			};
-			buildConfigurationList = 0ABE1E6224D683B70050E722 /* Build configuration list for PBXProject "shenji-ios" */;
+			buildConfigurationList = 0ABE1E6224D683B70050E722 /* Build configuration list for PBXProject "shengji-ios" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,41 +151,41 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0ABE1E6624D683B70050E722 /* shenji-ios */,
+				0A1B7E5424D7825100CCB283 /* Shengji */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0ABE1E6524D683B70050E722 /* Resources */ = {
+		0A1B7E5324D7825100CCB283 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ABE1E7724D683B80050E722 /* LaunchScreen.storyboard in Resources */,
-				0ABE1E7124D683B80050E722 /* Assets.xcassets in Resources */,
+				0A1B7E6424D7825200CCB283 /* LaunchScreen.storyboard in Resources */,
+				0A1B7E6124D7825200CCB283 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0ABE1E6324D683B70050E722 /* Sources */ = {
+		0A1B7E5124D7825100CCB283 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A7878DF24D6846400CA8CFE /* ViewController.swift in Sources */,
-				0A7878E124D6863000CA8CFE /* NetworkService.swift in Sources */,
-				0ABE1E6B24D683B70050E722 /* AppDelegate.swift in Sources */,
+				0A1B7E5824D7825100CCB283 /* AppDelegate.swift in Sources */,
+				0A1B7E6924D782E000CCB283 /* NetworkService.swift in Sources */,
+				0A1B7E5A24D7825100CCB283 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0ABE1E7524D683B80050E722 /* LaunchScreen.storyboard */ = {
+		0A1B7E6224D7825200CCB283 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0ABE1E7624D683B80050E722 /* Base */,
+				0A1B7E6324D7825200CCB283 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -161,6 +193,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0A1B7E6724D7825200CCB283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WM87N8XYQ;
+				INFOPLIST_FILE = Shengji/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.monorailapps.Shengji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A1B7E6824D7825200CCB283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WM87N8XYQ;
+				INFOPLIST_FILE = Shengji/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.monorailapps.Shengji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		0ABE1E7924D683B80050E722 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -277,67 +347,23 @@
 			};
 			name = Release;
 		};
-		0ABE1E7C24D683B80050E722 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 3WM87N8XYQ;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "shenji-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.monorailapps.shenji-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		0ABE1E7D24D683B80050E722 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 3WM87N8XYQ;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "shenji-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.monorailapps.shenji-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0ABE1E6224D683B70050E722 /* Build configuration list for PBXProject "shenji-ios" */ = {
+		0A1B7E6624D7825200CCB283 /* Build configuration list for PBXNativeTarget "Shengji" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ABE1E7924D683B80050E722 /* Debug */,
-				0ABE1E7A24D683B80050E722 /* Release */,
+				0A1B7E6724D7825200CCB283 /* Debug */,
+				0A1B7E6824D7825200CCB283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0ABE1E7B24D683B80050E722 /* Build configuration list for PBXNativeTarget "shenji-ios" */ = {
+		0ABE1E6224D683B70050E722 /* Build configuration list for PBXProject "shengji-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ABE1E7C24D683B80050E722 /* Debug */,
-				0ABE1E7D24D683B80050E722 /* Release */,
+				0ABE1E7924D683B80050E722 /* Debug */,
+				0ABE1E7A24D683B80050E722 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -356,7 +382,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0A8673F024D698980022F6A1 /* Starscream */ = {
+		0A1B7E6B24D782FD00CCB283 /* Starscream */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0A8673EF24D698980022F6A1 /* XCRemoteSwiftPackageReference "Starscream" */;
 			productName = Starscream;
