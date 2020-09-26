@@ -9,16 +9,14 @@ import SwiftUI
 
 struct HandView: View {
   @Binding var cards: [CardProtocol]
+  private let cardWidth: CGFloat = 62
   
   var body: some View {
-    GeometryReader { geo in
-      ZStack {
+    HStack(spacing: -36) {
         ForEach(cards.indices, id: \.self) { index in
           CardView(card: cards[index])
-            .frame(width: 63)
-            .offset(x: CGFloat(index) * geo.size.width / 25, y: 0)
+            .frame(width: cardWidth)
         }
-      }
     }
   }
 }
