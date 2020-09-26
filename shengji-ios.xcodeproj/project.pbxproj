@@ -3,148 +3,107 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A1B7E5824D7825100CCB283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B7E5724D7825100CCB283 /* AppDelegate.swift */; };
-		0A1B7E5A24D7825100CCB283 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B7E5924D7825100CCB283 /* SceneDelegate.swift */; };
-		0A1B7E6124D7825200CCB283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B7E6024D7825200CCB283 /* Assets.xcassets */; };
-		0A1B7E6424D7825200CCB283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B7E6224D7825200CCB283 /* LaunchScreen.storyboard */; };
-		0A1B7E6924D782E000CCB283 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7878E024D6863000CA8CFE /* NetworkService.swift */; };
-		0A1B7E6C24D782FD00CCB283 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 0A1B7E6B24D782FD00CCB283 /* Starscream */; };
-		0A1F577724E0B1FF00BA0CE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F577624E0B1FF00BA0CE7 /* LoginViewController.swift */; };
-		0A1F577924E0BD0D00BA0CE7 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F577824E0BD0D00BA0CE7 /* BorderedButton.swift */; };
-		0A1F577B24E0BDFB00BA0CE7 /* BorderedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F577A24E0BDFB00BA0CE7 /* BorderedTextField.swift */; };
+		0A142710251FC05900192455 /* Shengji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A14270F251FC05900192455 /* Shengji.swift */; };
+		0A142712251FC05900192455 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A142711251FC05900192455 /* ContentView.swift */; };
+		0A142714251FC05A00192455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A142713251FC05A00192455 /* Assets.xcassets */; };
+		0A142717251FC05A00192455 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A142716251FC05A00192455 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A1B7E5524D7825100CCB283 /* Shengji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shengji.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A1B7E5724D7825100CCB283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A1B7E5924D7825100CCB283 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0A1B7E6024D7825200CCB283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0A1B7E6324D7825200CCB283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0A1B7E6524D7825200CCB283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A1F577624E0B1FF00BA0CE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		0A1F577824E0BD0D00BA0CE7 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
-		0A1F577A24E0BDFB00BA0CE7 /* BorderedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedTextField.swift; sourceTree = "<group>"; };
-		0A7878E024D6863000CA8CFE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = "../../shengji-ios/NetworkService.swift"; sourceTree = "<group>"; };
+		0A14270C251FC05900192455 /* shengji-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shengji-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A14270F251FC05900192455 /* Shengji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shengji.swift; sourceTree = "<group>"; };
+		0A142711251FC05900192455 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A142713251FC05A00192455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A142716251FC05A00192455 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A142718251FC05A00192455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A1B7E5224D7825100CCB283 /* Frameworks */ = {
+		0A142709251FC05900192455 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1B7E6C24D782FD00CCB283 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A1B7E5624D7825100CCB283 /* Shengji */ = {
+		0A142703251FC05900192455 = {
 			isa = PBXGroup;
 			children = (
-				0A4DDC9524D8B39000948D52 /* Supporting Files */,
-				0A4DDC9724D8B3AD00948D52 /* Networking */,
-				0A4DDC9624D8B39E00948D52 /* App Images */,
-				0A1F577624E0B1FF00BA0CE7 /* LoginViewController.swift */,
-				0A1F577A24E0BDFB00BA0CE7 /* BorderedTextField.swift */,
-				0A1F577824E0BD0D00BA0CE7 /* BorderedButton.swift */,
-			);
-			path = Shengji;
-			sourceTree = "<group>";
-		};
-		0A1B7E6A24D782FD00CCB283 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0A4DDC9524D8B39000948D52 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0A1B7E5724D7825100CCB283 /* AppDelegate.swift */,
-				0A1B7E5924D7825100CCB283 /* SceneDelegate.swift */,
-				0A1B7E6524D7825200CCB283 /* Info.plist */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0A4DDC9624D8B39E00948D52 /* App Images */ = {
-			isa = PBXGroup;
-			children = (
-				0A1B7E6024D7825200CCB283 /* Assets.xcassets */,
-				0A1B7E6224D7825200CCB283 /* LaunchScreen.storyboard */,
-			);
-			path = "App Images";
-			sourceTree = "<group>";
-		};
-		0A4DDC9724D8B3AD00948D52 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				0A7878E024D6863000CA8CFE /* NetworkService.swift */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		0ABE1E5E24D683B70050E722 = {
-			isa = PBXGroup;
-			children = (
-				0A1B7E5624D7825100CCB283 /* Shengji */,
-				0ABE1E6824D683B70050E722 /* Products */,
-				0A1B7E6A24D782FD00CCB283 /* Frameworks */,
+				0A14270E251FC05900192455 /* shengji-ios */,
+				0A14270D251FC05900192455 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0ABE1E6824D683B70050E722 /* Products */ = {
+		0A14270D251FC05900192455 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A1B7E5524D7825100CCB283 /* Shengji.app */,
+				0A14270C251FC05900192455 /* shengji-ios.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0A14270E251FC05900192455 /* shengji-ios */ = {
+			isa = PBXGroup;
+			children = (
+				0A14270F251FC05900192455 /* Shengji.swift */,
+				0A142711251FC05900192455 /* ContentView.swift */,
+				0A142713251FC05A00192455 /* Assets.xcassets */,
+				0A142718251FC05A00192455 /* Info.plist */,
+				0A142715251FC05A00192455 /* Preview Content */,
+			);
+			path = "shengji-ios";
+			sourceTree = "<group>";
+		};
+		0A142715251FC05A00192455 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0A142716251FC05A00192455 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A1B7E5424D7825100CCB283 /* Shengji */ = {
+		0A14270B251FC05900192455 /* shengji-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A1B7E6624D7825200CCB283 /* Build configuration list for PBXNativeTarget "Shengji" */;
+			buildConfigurationList = 0A14271B251FC05A00192455 /* Build configuration list for PBXNativeTarget "shengji-ios" */;
 			buildPhases = (
-				0A1B7E5124D7825100CCB283 /* Sources */,
-				0A1B7E5224D7825100CCB283 /* Frameworks */,
-				0A1B7E5324D7825100CCB283 /* Resources */,
+				0A142708251FC05900192455 /* Sources */,
+				0A142709251FC05900192455 /* Frameworks */,
+				0A14270A251FC05900192455 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Shengji;
-			packageProductDependencies = (
-				0A1B7E6B24D782FD00CCB283 /* Starscream */,
-			);
-			productName = Shengji;
-			productReference = 0A1B7E5524D7825100CCB283 /* Shengji.app */;
+			name = "shengji-ios";
+			productName = "shengji-ios";
+			productReference = 0A14270C251FC05900192455 /* shengji-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0ABE1E5F24D683B70050E722 /* Project object */ = {
+		0A142704251FC05900192455 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					0A1B7E5424D7825100CCB283 = {
-						CreatedOnToolsVersion = 11.6;
+					0A14270B251FC05900192455 = {
+						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 0ABE1E6224D683B70050E722 /* Build configuration list for PBXProject "shengji-ios" */;
+			buildConfigurationList = 0A142707251FC05900192455 /* Build configuration list for PBXProject "shengji-ios" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -152,98 +111,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 0ABE1E5E24D683B70050E722;
-			packageReferences = (
-				0A8673EF24D698980022F6A1 /* XCRemoteSwiftPackageReference "Starscream" */,
-			);
-			productRefGroup = 0ABE1E6824D683B70050E722 /* Products */;
+			mainGroup = 0A142703251FC05900192455;
+			productRefGroup = 0A14270D251FC05900192455 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A1B7E5424D7825100CCB283 /* Shengji */,
+				0A14270B251FC05900192455 /* shengji-ios */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0A1B7E5324D7825100CCB283 /* Resources */ = {
+		0A14270A251FC05900192455 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1B7E6424D7825200CCB283 /* LaunchScreen.storyboard in Resources */,
-				0A1B7E6124D7825200CCB283 /* Assets.xcassets in Resources */,
+				0A142717251FC05A00192455 /* Preview Assets.xcassets in Resources */,
+				0A142714251FC05A00192455 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0A1B7E5124D7825100CCB283 /* Sources */ = {
+		0A142708251FC05900192455 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1F577924E0BD0D00BA0CE7 /* BorderedButton.swift in Sources */,
-				0A1F577724E0B1FF00BA0CE7 /* LoginViewController.swift in Sources */,
-				0A1F577B24E0BDFB00BA0CE7 /* BorderedTextField.swift in Sources */,
-				0A1B7E5824D7825100CCB283 /* AppDelegate.swift in Sources */,
-				0A1B7E6924D782E000CCB283 /* NetworkService.swift in Sources */,
-				0A1B7E5A24D7825100CCB283 /* SceneDelegate.swift in Sources */,
+				0A142712251FC05900192455 /* ContentView.swift in Sources */,
+				0A142710251FC05900192455 /* Shengji.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		0A1B7E6224D7825200CCB283 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A1B7E6324D7825200CCB283 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		0A1B7E6724D7825200CCB283 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3WM87N8XYQ;
-				INFOPLIST_FILE = "$(SRCROOT)/Shengji/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.monorailapps.Shengji;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		0A1B7E6824D7825200CCB283 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3WM87N8XYQ;
-				INFOPLIST_FILE = "$(SRCROOT)/Shengji/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.monorailapps.Shengji;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		0ABE1E7924D683B80050E722 /* Debug */ = {
+		0A142719251FC05A00192455 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -304,7 +207,7 @@
 			};
 			name = Debug;
 		};
-		0ABE1E7A24D683B80050E722 /* Release */ = {
+		0A14271A251FC05A00192455 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -359,47 +262,72 @@
 			};
 			name = Release;
 		};
+		0A14271C251FC05A00192455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"shengji-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = 3WM87N8XYQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "shengji-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.monorailapps.shengji-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A14271D251FC05A00192455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"shengji-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = 3WM87N8XYQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "shengji-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.monorailapps.shengji-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A1B7E6624D7825200CCB283 /* Build configuration list for PBXNativeTarget "Shengji" */ = {
+		0A142707251FC05900192455 /* Build configuration list for PBXProject "shengji-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A1B7E6724D7825200CCB283 /* Debug */,
-				0A1B7E6824D7825200CCB283 /* Release */,
+				0A142719251FC05A00192455 /* Debug */,
+				0A14271A251FC05A00192455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0ABE1E6224D683B70050E722 /* Build configuration list for PBXProject "shengji-ios" */ = {
+		0A14271B251FC05A00192455 /* Build configuration list for PBXNativeTarget "shengji-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ABE1E7924D683B80050E722 /* Debug */,
-				0ABE1E7A24D683B80050E722 /* Release */,
+				0A14271C251FC05A00192455 /* Debug */,
+				0A14271D251FC05A00192455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		0A8673EF24D698980022F6A1 /* XCRemoteSwiftPackageReference "Starscream" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/daltoniam/Starscream.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.4;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		0A1B7E6B24D782FD00CCB283 /* Starscream */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0A8673EF24D698980022F6A1 /* XCRemoteSwiftPackageReference "Starscream" */;
-			productName = Starscream;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 0ABE1E5F24D683B70050E722 /* Project object */;
+	rootObject = 0A142704251FC05900192455 /* Project object */;
 }
