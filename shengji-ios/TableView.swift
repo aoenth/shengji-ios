@@ -20,6 +20,7 @@ struct TableView: View {
           set: { _ in }
         )
       )
+      .frame(maxHeight: 88)
     }
 }
 

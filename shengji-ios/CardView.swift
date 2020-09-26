@@ -90,7 +90,6 @@ struct CardBorderNormal: View {
   var body: some View {
     RoundedRectangle(cornerRadius: 5)
       .stroke(Color.gray)
-      .foregroundColor(.white)
   }
 }
 
@@ -101,40 +100,42 @@ struct CardBorderBower: View {
   }
 }
 
-struct CardFaceNormal: View {
+struct CardLabelNormal: View {
   let rank: Int
   let suit: Character 
   var body: some View {
     VStack {
       Text("\(rank)")
+        .foregroundColor(.black)
+        .fontWeight(.heavy)
       Text(String(suit))
         .font(.caption)
     }
   }
 }
 
-struct CardFaceLeftBower: View {
+struct CardLabelLeftBower: View {
   var body: some View {
-    Image("Left Bower")
+    EmptyView()
   }
 }
 
-struct CardFaceRightBower: View {
+struct CardLabelRightBower: View {
   var body: some View {
-    Image("Right Bower")
+    EmptyView()
   }
 }
 
-struct CardFace: View {
+struct CardLabel: View {
   let card: CardProtocol
   var body: some View {
     switch card.suit {
     case .rightBower:
-      CardFaceRightBower()
+      CardLabelRightBower()
     case .leftBower:
-      CardFaceLeftBower()
+      CardLabelLeftBower()
     default:
-      CardFaceNormal(
+      CardLabelNormal(
         rank: card.rank.rawValue, 
         suit: card.suit.description.first!
       )
@@ -170,6 +171,31 @@ extension VerticalAlignment {
   static let verticalCardAlignment = VerticalAlignment(CardAlignment.self)
 }
 
+struct CardBackground: View {
+  let card: CardProtocol
+  var body: some View {
+    switch card.suit {
+    case .leftBower:
+      Image("Left Bower")
+    case .rightBower:
+      Image("Right Bower")
+    default:
+      Color.white
+    }
+  }
+}
+
+struct CardBorder: View {
+  let card: CardProtocol
+  var body: some View {
+    switch card.suit {
+    case .leftBower, .rightBower:
+      CardBorderBower()
+    default:
+      CardBorderNormal()
+    }
+  }
+}
 
 struct CardView: View {
   let card: CardProtocol
@@ -179,22 +205,23 @@ struct CardView: View {
       vertical: .verticalCardAlignment
     )
     ZStack(alignment: alignment) {
-      CardFace(card: card)
-        .clipShape(RoundedRectangle(cornerRadius: 5))
-      switch card.suit {
-      case .leftBower, .rightBower:
-        CardBorderBower()
-      default:
-        CardBorderNormal()
+      Group {
+        CardBackground(card: card)
+        CardLabel(card: card)
       }
+      .clipShape(RoundedRectangle(cornerRadius: 5))
+      CardBorder(card: card)
     }
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    CardView(card: Card(suit: .clubs, rank: .three, deckNumber: 1))
-      .previewLayout(.fixed(width: 63, height: 88))
+    ZStack {
+      Rectangle()
+      CardView(card: Card(suit: .clubs, rank: .three, deckNumber: 1))
+    }
+    .previewLayout(.fixed(width: 63, height: 88))
     CardView(card: Card(suit: .clubs, rank: .ten, deckNumber: 1))
       .previewLayout(.fixed(width: 63, height: 88))
     CardView(card: Card(suit: .leftBower, rank: .leftBower, deckNumber: 1))

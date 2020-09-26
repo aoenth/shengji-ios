@@ -11,7 +11,7 @@ import SwiftUI
 struct Shengji: App {
     var body: some Scene {
         WindowGroup {
-            Text("Hello")
+            TableView()
         }
     }
 }

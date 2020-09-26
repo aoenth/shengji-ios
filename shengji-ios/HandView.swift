@@ -16,7 +16,6 @@ struct HandView: View {
         ForEach(cards.indices, id: \.self) { index in
           CardView(card: cards[index])
             .frame(width: 63)
-            .background(Color.white)
             .offset(x: CGFloat(index) * geo.size.width / 25, y: 0)
         }
       }
@@ -37,7 +36,7 @@ struct HandView_Previews: PreviewProvider {
         set: { _ in }
       )
     )
-    .previewLayout(.fixed(width: 812 - 16, height: 63))
+    .previewLayout(.fixed(width: 812 - 16, height: 88))
     
     HandView(
       cards: .init(
@@ -50,7 +49,7 @@ struct HandView_Previews: PreviewProvider {
         set: { _ in }
       )
     )
-    .previewLayout(.fixed(width: 812 - 16, height: 63))
+    .previewLayout(.fixed(width: 812 - 16, height: 88))
   
     HandView(
       cards: .init(
@@ -60,6 +59,6 @@ struct HandView_Previews: PreviewProvider {
         set: { _ in }
       )
     )
-    .previewLayout(.fixed(width: 812 - 16, height: 63))
+    .previewLayout(.fixed(width: 812 - 16, height: 88))
   }
 }
