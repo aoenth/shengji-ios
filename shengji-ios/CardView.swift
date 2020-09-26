@@ -86,11 +86,18 @@ protocol CardProtocol {
   var id: Int { get }
 }
 
-struct CardBorder: View {
+struct CardBorderNormal: View {
   var body: some View {
     RoundedRectangle(cornerRadius: 5)
       .stroke(Color.gray)
       .foregroundColor(.white)
+  }
+}
+
+struct CardBorderBower: View {
+  var body: some View {
+    RoundedRectangle(cornerRadius: 5)
+      .stroke(Color.white)
   }
 }
 
@@ -106,29 +113,15 @@ struct CardFaceNormal: View {
   }
 }
 
-struct CardFaceJoker: View {
-  var body: some View {
-    VStack {
-      Text("J")
-      Text("O")
-      Text("K")
-      Text("E")
-      Text("R")
-    }
-    .font(.caption)
-  }
-}
-
 struct CardFaceLeftBower: View {
   var body: some View {
-    CardFaceJoker()
+    Image("Left Bower")
   }
 }
 
 struct CardFaceRightBower: View {
   var body: some View {
-    CardFaceJoker()
-      .foregroundColor(.red)
+    Image("Right Bower")
   }
 }
 
@@ -144,6 +137,14 @@ struct CardFace: View {
       CardFaceNormal(
         rank: card.rank.rawValue, 
         suit: card.suit.description.first!
+      )
+      .alignmentGuide(
+        .horizontalCardAlignment,
+        computeValue: { d in d[HorizontalAlignment.center] }
+      )
+      .alignmentGuide(
+        .verticalCardAlignment,
+        computeValue: { d in d[.top] }
       )
     }
   }
@@ -178,16 +179,14 @@ struct CardView: View {
       vertical: .verticalCardAlignment
     )
     ZStack(alignment: alignment) {
-      CardBorder()
       CardFace(card: card)
-        .alignmentGuide(
-          .horizontalCardAlignment,
-          computeValue: { d in d[HorizontalAlignment.center] }
-        )
-        .alignmentGuide(
-          .verticalCardAlignment,
-          computeValue: { d in d[.top] }
-        )
+        .clipShape(RoundedRectangle(cornerRadius: 5))
+      switch card.suit {
+      case .leftBower, .rightBower:
+        CardBorderBower()
+      default:
+        CardBorderNormal()
+      }
     }
   }
 }
