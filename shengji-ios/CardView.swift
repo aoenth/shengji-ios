@@ -11,6 +11,18 @@ struct Card: CardProtocol {
   let suit: Suit
   let rank: Rank
   let deckNumber: Int
+  
+  var id: Int {
+    if rank == .leftBower {
+      return 112 + deckNumber - 1
+    }
+    else if rank == .rightBower {
+      return 114 + deckNumber - 1
+    }
+    else{
+      return 8 * rank.rawValue + suit.rawValue + (deckNumber - 1) * 4
+    }
+  }
 }
 
 enum Suit: Int {
@@ -41,10 +53,37 @@ enum Rank: Int, CaseIterable {
   case jack, queen, king, leftBower, rightBower
 }
 
+extension Card {
+  init(id: Int) {
+    guard 8 ... 115 ~= id else {
+      fatalError("Unable to initialize card. Invalid ID")
+    }
+    if id >= 114 {
+      self.suit = .rightBower
+      self.rank = .rightBower
+      self.deckNumber = id % 114 + 1
+    } else if id >= 112 {
+      self.suit = .leftBower
+      self.rank = .leftBower
+      self.deckNumber = id % 112 + 1
+    } else {
+      let suit = id % 4
+      self.suit = Suit(rawValue: suit)!
+      
+      let rank = id / 8
+      self.rank = Rank(rawValue: rank)!
+      
+      let deckNumber = id % 8 < 4 ? 1 : 2
+      self.deckNumber = deckNumber
+    }
+  }
+}
+
 protocol CardProtocol {
   var suit: Suit { get }
   var rank: Rank { get }
   var deckNumber: Int { get }
+  var id: Int { get }
 }
 
 struct CardBorder: View {

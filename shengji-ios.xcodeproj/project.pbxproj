@@ -11,6 +11,8 @@
 		0A142712251FC05900192455 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A142711251FC05900192455 /* CardView.swift */; };
 		0A142714251FC05A00192455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A142713251FC05A00192455 /* Assets.xcassets */; };
 		0A142717251FC05A00192455 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A142716251FC05A00192455 /* Preview Assets.xcassets */; };
+		0A142725251FDA7100192455 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A142724251FDA7100192455 /* TableView.swift */; };
+		0A142728251FDF1F00192455 /* HandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A142727251FDF1F00192455 /* HandView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		0A142713251FC05A00192455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A142716251FC05A00192455 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A142718251FC05A00192455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A142724251FDA7100192455 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		0A142727251FDF1F00192455 /* HandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				0A14270F251FC05900192455 /* Shengji.swift */,
 				0A142711251FC05900192455 /* CardView.swift */,
+				0A142724251FDA7100192455 /* TableView.swift */,
+				0A142727251FDF1F00192455 /* HandView.swift */,
 				0A142713251FC05A00192455 /* Assets.xcassets */,
 				0A142718251FC05A00192455 /* Info.plist */,
 				0A142715251FC05A00192455 /* Preview Content */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A142712251FC05900192455 /* CardView.swift in Sources */,
+				0A142725251FDA7100192455 /* TableView.swift in Sources */,
 				0A142710251FC05900192455 /* Shengji.swift in Sources */,
+				0A142728251FDF1F00192455 /* HandView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
