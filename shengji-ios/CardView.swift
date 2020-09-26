@@ -138,11 +138,21 @@ extension VerticalAlignment {
 struct CardView: View {
   let card: CardProtocol
   var body: some View {
-    ZStack(alignment: Alignment(horizontal: .horizontalCardAlignment, vertical: .verticalCardAlignment)) {
+    let alignment = Alignment(
+      horizontal: .horizontalCardAlignment,
+      vertical: .verticalCardAlignment
+    )
+    ZStack(alignment: alignment) {
       CardBorder()
       CardFace(card: card)
-        .alignmentGuide(HorizontalAlignment.horizontalCardAlignment, computeValue: { d in d[HorizontalAlignment.center] })
-        .alignmentGuide(VerticalAlignment.verticalCardAlignment, computeValue: { d in d[.top] })
+        .alignmentGuide(
+          .horizontalCardAlignment,
+          computeValue: { d in d[HorizontalAlignment.center] }
+        )
+        .alignmentGuide(
+          .verticalCardAlignment,
+          computeValue: { d in d[.top] }
+        )
     }
   }
 }

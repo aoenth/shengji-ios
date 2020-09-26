@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A142710251FC05900192455 /* Shengji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A14270F251FC05900192455 /* Shengji.swift */; };
-		0A142712251FC05900192455 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A142711251FC05900192455 /* ContentView.swift */; };
+		0A142712251FC05900192455 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A142711251FC05900192455 /* CardView.swift */; };
 		0A142714251FC05A00192455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A142713251FC05A00192455 /* Assets.xcassets */; };
 		0A142717251FC05A00192455 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A142716251FC05A00192455 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		0A14270C251FC05900192455 /* shengji-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shengji-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A14270F251FC05900192455 /* Shengji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shengji.swift; sourceTree = "<group>"; };
-		0A142711251FC05900192455 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A142711251FC05900192455 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		0A142713251FC05A00192455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A142716251FC05A00192455 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A142718251FC05A00192455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				0A14270F251FC05900192455 /* Shengji.swift */,
-				0A142711251FC05900192455 /* ContentView.swift */,
+				0A142711251FC05900192455 /* CardView.swift */,
 				0A142713251FC05A00192455 /* Assets.xcassets */,
 				0A142718251FC05A00192455 /* Info.plist */,
 				0A142715251FC05A00192455 /* Preview Content */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A142712251FC05900192455 /* ContentView.swift in Sources */,
+				0A142712251FC05900192455 /* CardView.swift in Sources */,
 				0A142710251FC05900192455 /* Shengji.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
