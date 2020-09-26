@@ -49,11 +49,9 @@ protocol CardProtocol {
 
 struct CardBorder: View {
   var body: some View {
-    GeometryReader { geo in
-      RoundedRectangle(cornerRadius: geo.size.width * 5 / 63)
-        .stroke(Color.gray)
-        .foregroundColor(.white)
-    }
+    RoundedRectangle(cornerRadius: 5)
+      .stroke(Color.gray)
+      .foregroundColor(.white)
   }
 }
 
@@ -72,15 +70,13 @@ struct CardFaceNormal: View {
 struct CardFaceJoker: View {
   var body: some View {
     VStack {
-      Group {
-        Text("J")
-        Text("O")
-        Text("K")
-        Text("E")
-        Text("R")
-      }
-      .font(.caption)
+      Text("J")
+      Text("O")
+      Text("K")
+      Text("E")
+      Text("R")
     }
+    .font(.caption)
   }
 }
 
