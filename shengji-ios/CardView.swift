@@ -48,9 +48,45 @@ extension Suit: CustomStringConvertible {
   }
 }
 
+extension Suit {
+  public var imageName: String {
+    switch self {
+    case .spades:
+      return "suit.spade.fill"
+    case .hearts:
+      return "suit.heart.fill"
+    case .diamonds:
+      return "suit.diamond.fill"
+    case .clubs:
+      return "suit.club.fill"
+    default:
+      return "xmark.octagon.fill"
+    }
+  }
+}
+
 enum Rank: Int, CaseIterable {
   case ace = 1, two, three, four, five, six, seven, eight, nine, ten
   case jack, queen, king, leftBower, rightBower
+}
+
+extension Rank: CustomStringConvertible {
+  var description: String {
+    switch self {
+    case .ace:
+      return "A"
+    case .jack:
+      return "J"
+    case .queen:
+      return "Q"
+    case .king:
+      return "K"
+    case .leftBower, .rightBower:
+      return ""
+    default:
+      return "\(rawValue)"
+    }
+  }
 }
 
 extension Card {
@@ -101,15 +137,30 @@ struct CardBorderBower: View {
 }
 
 struct CardLabelNormal: View {
-  let rank: Int
-  let suit: Character 
+  let rank: String
+  let sfSymbolName: String 
   var body: some View {
     VStack {
-      Text("\(rank)")
+      Text(rank)
         .foregroundColor(.black)
-        .fontWeight(.heavy)
-      Text(String(suit))
-        .font(.caption)
+        .bold()
+      Image(systemName: sfSymbolName)
+        .foregroundColor(color(for: sfSymbolName))
+    }
+  }
+  
+  private func color(for symbol: String) -> Color {
+    switch symbol {
+    case "suit.spade.fill":
+      return .black
+    case "suit.heart.fill":
+      return .red
+    case "suit.diamond.fill":
+      return .red
+    case "suit.club.fill":
+      return .black
+    default:
+      return .red
     }
   }
 }
@@ -136,8 +187,8 @@ struct CardLabel: View {
       CardLabelLeftBower()
     default:
       CardLabelNormal(
-        rank: card.rank.rawValue, 
-        suit: card.suit.description.first!
+        rank: card.rank.description, 
+        sfSymbolName: card.suit.imageName
       )
       .alignmentGuide(
         .horizontalCardAlignment,
@@ -177,8 +228,10 @@ struct CardBackground: View {
     switch card.suit {
     case .leftBower:
       Image("Left Bower")
+        .resizable()
     case .rightBower:
       Image("Right Bower")
+        .resizable()
     default:
       Color.white
     }
@@ -228,5 +281,9 @@ struct ContentView_Previews: PreviewProvider {
       .previewLayout(.fixed(width: 63, height: 88))
     CardView(card: Card(suit: .rightBower, rank: .rightBower, deckNumber: 1))
       .previewLayout(.fixed(width: 63, height: 88))
+    CardView(card: Card(suit: .rightBower, rank: .rightBower, deckNumber: 1))
+      .previewLayout(.fixed(width: 20, height: 28))
+    CardView(card: Card(suit: .clubs, rank: .ten, deckNumber: 1))
+      .previewLayout(.fixed(width: 20, height: 28))
   }
 }
