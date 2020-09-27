@@ -10,15 +10,11 @@ import SwiftUI
 struct TableView: View {
   var body: some View {
     HandView(
-      cards: .init(
-        get: {
-          (8..<(8 + 17)).map(Card.init) + [
-            Card(suit: .leftBower, rank: .leftBower, deckNumber: 1),
-            Card(suit: .rightBower, rank: .rightBower, deckNumber: 1)
-          ]
-        },
-        set: { _ in }
-      )
+      cards: 
+        (8..<(8 + 17)).map(Card.init) + [
+          Card(suit: .leftBower, rank: .leftBower, deckNumber: 1),
+          Card(suit: .rightBower, rank: .rightBower, deckNumber: 1)
+        ]
     )
     .frame(maxHeight: 88)
   }

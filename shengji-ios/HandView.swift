@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HandView: View {
-  @Binding var cards: [CardProtocol]
+  let cards: [CardProtocol]
   private let cardWidth: CGFloat = 62
   
   var body: some View {
@@ -24,38 +24,27 @@ struct HandView: View {
 struct HandView_Previews: PreviewProvider {
   static var previews: some View {
     HandView(
-      cards: .init(
-        get: {
-          (8..<(8 + 23)).map(Card.init) + [
-              Card(suit: .leftBower, rank: .leftBower, deckNumber: 1),
-              Card(suit: .rightBower, rank: .rightBower, deckNumber: 1)
-            ]
-        },
-        set: { _ in }
-      )
+      cards: 
+        (8..<(8 + 23)).map(Card.init) + [
+          Card(suit: .leftBower, rank: .leftBower, deckNumber: 1),
+          Card(suit: .rightBower, rank: .rightBower, deckNumber: 1)
+        ]
     )
     .previewLayout(.fixed(width: 812 - 16, height: 88))
     
     HandView(
-      cards: .init(
-        get: {
-          (8..<(8 + 17)).map(Card.init) + [
-            Card(suit: .leftBower, rank: .leftBower, deckNumber: 1),
-            Card(suit: .rightBower, rank: .rightBower, deckNumber: 1)
-          ]
-        },
-        set: { _ in }
-      )
+      cards: 
+        
+        (8..<(8 + 17)).map(Card.init) + [
+          Card(suit: .leftBower, rank: .leftBower, deckNumber: 1),
+          Card(suit: .rightBower, rank: .rightBower, deckNumber: 1)
+        ]
     )
     .previewLayout(.fixed(width: 812 - 16, height: 88))
-  
+    
     HandView(
-      cards: .init(
-        get: {
-          [Card(suit: .rightBower, rank: .rightBower, deckNumber: 1)]
-        },
-        set: { _ in }
-      )
+      cards: 
+        [Card(suit: .rightBower, rank: .rightBower, deckNumber: 1)]
     )
     .previewLayout(.fixed(width: 812 - 16, height: 88))
   }
