@@ -282,8 +282,10 @@ struct ContentView_Previews: PreviewProvider {
     CardView(card: Card(suit: .rightBower, rank: .rightBower, deckNumber: 1))
       .previewLayout(.fixed(width: 63, height: 88))
     CardView(card: Card(suit: .rightBower, rank: .rightBower, deckNumber: 1))
+      .font(.system(size: 10, weight: .bold))
       .previewLayout(.fixed(width: 20, height: 28))
     CardView(card: Card(suit: .clubs, rank: .ten, deckNumber: 1))
+      .font(.system(size: 10, weight: .bold))
       .previewLayout(.fixed(width: 20, height: 28))
   }
 }
