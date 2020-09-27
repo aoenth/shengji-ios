@@ -29,29 +29,29 @@ struct Frame: ViewModifier {
   }
 }
 
-struct TeamFrame: ViewModifier {
-  let team: Int
-  
-  func body(content: Content) -> some View {
-    content
-      .modifier(Frame(color: color(for: team)))
-  }
-  
-  private func color(for team: Int) -> Color {
+extension Color {
+  init(team: Int) {
     switch team {
     case 1:
-      return .red
+      self = .red
     case 2:
-      return .blue
+      self = .blue
     default:
-      return .primary
+      self = .primary
     }
+  }
+}
+
+struct TeamFrame: ViewModifier {
+  let team: Int
+  func body(content: Content) -> some View {
+    content
+      .modifier(Frame(color: Color(team: team)))
   }
 }
 
 struct PlayerIconView: View {
   let player: PlayerProtocol
-  
   var body: some View {
     Text(player.name)
       .modifier(TeamFrame(team: player.team))
