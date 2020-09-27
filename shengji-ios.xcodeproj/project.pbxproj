@@ -14,6 +14,7 @@
 		0A142725251FDA7100192455 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A142724251FDA7100192455 /* TableView.swift */; };
 		0A142728251FDF1F00192455 /* HandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A142727251FDF1F00192455 /* HandView.swift */; };
 		0A14272B2520025300192455 /* PlayerIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A14272A2520025300192455 /* PlayerIconView.swift */; };
+		0A2483DA25203D0400CD09A8 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2483D925203D0400CD09A8 /* ScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0A142724251FDA7100192455 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		0A142727251FDF1F00192455 /* HandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandView.swift; sourceTree = "<group>"; };
 		0A14272A2520025300192455 /* PlayerIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerIconView.swift; sourceTree = "<group>"; };
+		0A2483D925203D0400CD09A8 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				0A142724251FDA7100192455 /* TableView.swift */,
 				0A14272A2520025300192455 /* PlayerIconView.swift */,
 				0A142727251FDF1F00192455 /* HandView.swift */,
+				0A2483D925203D0400CD09A8 /* ScoreView.swift */,
 				0A142713251FC05A00192455 /* Assets.xcassets */,
 				0A142718251FC05A00192455 /* Info.plist */,
 				0A142715251FC05A00192455 /* Preview Content */,
@@ -152,6 +155,7 @@
 				0A142725251FDA7100192455 /* TableView.swift in Sources */,
 				0A142710251FC05900192455 /* Shengji.swift in Sources */,
 				0A142728251FDF1F00192455 /* HandView.swift in Sources */,
+				0A2483DA25203D0400CD09A8 /* ScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
